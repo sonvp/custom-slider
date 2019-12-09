@@ -22,4 +22,4 @@ A  Flutter Custom Slider.
 
             
 ## Screenshots
-<img src="https://github.com/sonvp/custom-slider/blob/master/screen_shoot/screen.png" alt="Custom Slider"/>
+![default image](screen_shoot/screen.png)
