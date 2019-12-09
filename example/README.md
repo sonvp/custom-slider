@@ -1,16 +1,25 @@
-# example
+# flutter_cusom_slider
 
-A new Flutter application.
+A  Flutter Custom Slider.
 
-## Getting Started
+# Creating Custom Slide
 
-This project is a starting point for a Flutter application.
+            CustomSlider(
+              activeTrackColor:Colors.green,
+              activeTickMarkColor:Colors.amber,
+              activeThumpColor:Colors.blue,
+              inactiveTrackColor: Colors.grey,
+              inactiveTickMarkColor:Colors.red,
+              thumpSize: 15,
+              tickMarkShape: 9,
+              trackHeight: 9,
+              onChanged: (value) {
+                // Do something
+              },
+              value: 3,
+              divisions: 5,
+            ),
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+            
+## Screenshots
+<img src="https://github.com/sonvp/custom-slider/blob/master/screen_shoot/screen.png" alt="Custom Slider"/>
