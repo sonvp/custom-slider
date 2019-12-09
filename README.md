@@ -2,14 +2,22 @@
 
 A  Flutter Custom Slider.
 
-## Getting Started
+# Creating Custom Slide
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
-# custom-slider
+              activeTrackColor:Colors.green,
+              activeTickMarkColor:Colors.amber,
+              activeThumpColor:Colors.blue,
+              inactiveTrackColor: Colors.grey,
+              inactiveTickMarkColor:Colors.red,
+              thumpSize: 15,
+              tickMarkShape: 9,
+              trackHeight: 9,
+              onChanged: (value) {
+                // Do something
+              },
+              value: 3,
+              divisions: 5,
+            ),
+            
+## Screenshots
+<img src="https://github.com/sonvp/custom-slider/blob/master/screen_shoot/screen.png" alt="Custom Slider"/>
