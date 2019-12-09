@@ -30,6 +30,9 @@ class MyApp extends StatelessWidget {
               activeThumpColor:Colors.blue,
               inactiveTrackColor: Colors.grey,
               inactiveTickMarkColor:Colors.red,
+              thumpSize: 15,
+              tickMarkShape: 9,
+              trackHeight: 9,
               onChanged: (value) {
                 // Do something
               },

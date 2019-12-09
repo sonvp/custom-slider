@@ -17,6 +17,7 @@ class CustomSlider extends StatefulWidget {
 
   final double thumpSize;
   final double tickMarkShape;
+  final double trackHeight;
 
   const CustomSlider({
     Key key,
@@ -32,6 +33,7 @@ class CustomSlider extends StatefulWidget {
     this.inactiveTickMarkColor = Colors.red,
     this.thumpSize = 15,
     this.tickMarkShape = 9,
+    this.trackHeight=6,
   })
       : assert(divisions >= 1),
         assert(value >= 0 && value <= divisions),
