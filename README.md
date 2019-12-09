@@ -4,6 +4,7 @@ A  Flutter Custom Slider.
 
 # Creating Custom Slide
 
+            CustomSlider(
               activeTrackColor:Colors.green,
               activeTickMarkColor:Colors.amber,
               activeThumpColor:Colors.blue,
@@ -18,6 +19,7 @@ A  Flutter Custom Slider.
               value: 3,
               divisions: 5,
             ),
+
             
 ## Screenshots
 <img src="https://github.com/sonvp/custom-slider/blob/master/screen_shoot/screen.png" alt="Custom Slider"/>
