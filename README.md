@@ -1,6 +1,6 @@
-# flutter_cusom_slider
+# flutter_Custom_slider
 
-A  Flutter Custom Slider.
+A Flutter Custom Slider.
 
 # Creating Custom Slide
 
