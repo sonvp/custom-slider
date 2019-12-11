@@ -18,6 +18,7 @@ A Flutter Custom Slider.
               },
               value: 3,
               divisions: 5,
+              trackTrackShape: 30,
             ),
 
             
