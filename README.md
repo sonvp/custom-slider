@@ -1,6 +1,7 @@
 # flutter_Custom_slider
 
 A Flutter Custom Slider.
+https://pub.dev/packages/flutter_custom_slider
 
 # Creating Custom Slide
 
