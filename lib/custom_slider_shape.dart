@@ -60,7 +60,23 @@ class CustomSliderTickMarkShape extends SliderTickMarkShape {
 
     // inner circle
     context.canvas.drawCircle(center, 9, paint);
+  }
+}
 
-
+class CustomTrackShape extends RoundedRectSliderTrackShape {
+  final double margin;
+  CustomTrackShape(this.margin);
+  Rect getPreferredRect({
+    @required RenderBox parentBox,
+    Offset offset = Offset.zero,
+    @required SliderThemeData sliderTheme,
+    bool isEnabled = false,
+    bool isDiscrete = false,
+  }) {
+    final double trackHeight = sliderTheme.trackHeight;
+    final double trackLeft = offset.dx+margin;
+    final double trackTop = offset.dy + (parentBox.size.height - trackHeight) / 2;
+    final double trackWidth = parentBox.size.width-(margin*2);
+    return Rect.fromLTWH(trackLeft, trackTop, trackWidth, trackHeight);
   }
 }

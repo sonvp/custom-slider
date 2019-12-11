@@ -1,8 +1,8 @@
 name: flutter_custom_slider
 description: A  Flutter Custom Slider.
-version: 0.0.1
+version: 0.0.3
 author: ngoc.son<ngocson160391@gmail.com>
-homepage:
+homepage: https://github.com/sonvp/custom-slider.git
 
 environment:
   sdk: ">=2.1.0 <3.0.0"

@@ -18,7 +18,7 @@ class CustomSlider extends StatefulWidget {
   final double thumpSize;
   final double tickMarkShape;
   final double trackHeight;
-
+  final double trackTrackShape;
   const CustomSlider({
     Key key,
     this.divisions = 1,
@@ -34,6 +34,7 @@ class CustomSlider extends StatefulWidget {
     this.thumpSize = 15,
     this.tickMarkShape = 9,
     this.trackHeight=6,
+    this.trackTrackShape=30
   })
       : assert(divisions >= 1),
         assert(value >= 0 && value <= divisions),
@@ -65,6 +66,7 @@ class _CustomSliderState extends State<CustomSlider> {
           thumpSize: widget.thumpSize,
         ),
         trackHeight: 6,
+        trackShape: CustomTrackShape(widget.trackTrackShape),
       ),
       child: Slider(
         min: 0,

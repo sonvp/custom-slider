@@ -38,6 +38,7 @@ class MyApp extends StatelessWidget {
               },
               value: 3,
               divisions: 5,
+              trackTrackShape: 30,
             ),
 
             Divider(),
