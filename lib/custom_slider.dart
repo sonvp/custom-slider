@@ -15,8 +15,8 @@ class CustomSlider extends StatefulWidget {
   final Color inactiveTrackColor;
   final Color inactiveTickMarkColor;
 
-  final double thumpSize;
-  final double tickMarkShape;
+  final double thumpRadius;
+  final double tickMarkRadius;
   final double trackHeight;
   final double marginTrackShape;
   const CustomSlider({
@@ -31,8 +31,8 @@ class CustomSlider extends StatefulWidget {
 
     this.inactiveTrackColor = Colors.grey,
     this.inactiveTickMarkColor = Colors.red,
-    this.thumpSize = 15,
-    this.tickMarkShape = 9,
+    this.thumpRadius = 15,
+    this.tickMarkRadius = 9,
     this.trackHeight=6,
     this.marginTrackShape=30
   })
@@ -60,13 +60,13 @@ class _CustomSliderState extends State<CustomSlider> {
         activeTickMarkColor: widget.activeTickMarkColor ,
         inactiveTrackColor: widget.inactiveTrackColor,
         inactiveTickMarkColor: widget.inactiveTickMarkColor,
-        tickMarkShape: CustomSliderTickMarkShape(tickMarkShape: widget.tickMarkShape),
+        tickMarkShape: CustomSliderTickMarkShape(tickMarkRadius: widget.tickMarkRadius),
         thumbShape: CustomSliderThumbShape(
           activeColor: widget.activeThumpColor,
-          thumpSize: widget.thumpSize,
+          thumpRadius: widget.thumpRadius,
         ),
-        trackHeight: 6,
-        trackShape: CustomTrackShape(widget.marginTrackShape),
+        trackHeight: widget.trackHeight,
+        trackShape: CustomTrackShape(widget.marginTrackShape, widget.tickMarkRadius),
       ),
       child: Slider(
         min: 0,

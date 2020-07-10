@@ -29,10 +29,28 @@ class MyApp extends StatelessWidget {
               activeTickMarkColor:Colors.amber,
               activeThumpColor:Colors.blue,
               inactiveTrackColor: Colors.grey,
-              inactiveTickMarkColor:Colors.red,
-              thumpSize: 15,
-              tickMarkShape: 9,
-              trackHeight: 9,
+              inactiveTickMarkColor:Colors.black,
+              thumpRadius: 15,
+              tickMarkRadius: 5,
+              trackHeight: 19,
+              onChanged: (value) {
+                // Do something
+              },
+              value: 3,
+              divisions: 5,
+              marginTrackShape: 30,
+            ),
+            Divider(),
+            Text("Horizontal with Divisions"),
+            CustomSlider(
+              activeTrackColor:Colors.green,
+              activeTickMarkColor:Colors.amber,
+              activeThumpColor:Colors.blue,
+              inactiveTrackColor: Colors.grey,
+              inactiveTickMarkColor:Colors.black,
+              thumpRadius: 15,
+              tickMarkRadius: 17,
+              trackHeight: 19,
               onChanged: (value) {
                 // Do something
               },
