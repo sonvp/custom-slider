@@ -5,15 +5,15 @@ https://pub.dev/packages/flutter_custom_slider
 
 # Creating Custom Slide
 
-            CustomSlider(
+             CustomSlider(
                           activeTrackColor:Colors.green,
                           activeTickMarkColor:Colors.amber,
                           activeThumpColor:Colors.blue,
                           inactiveTrackColor: Colors.grey,
-                          inactiveTickMarkColor:Colors.red,
-                          thumpSize: 15,
-                          tickMarkShape: 9,
-                          trackHeight: 9,
+                          inactiveTickMarkColor:Colors.black,
+                          thumpRadius: 15,
+                          tickMarkRadius: 5,
+                          trackHeight: 19,
                           onChanged: (value) {
                             // Do something
                           },
