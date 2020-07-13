@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
               activeTickMarkColor:Colors.amber,
               activeThumpColor:Colors.blue,
               inactiveTrackColor: Colors.grey,
-              inactiveTickMarkColor:Colors.black,
+              inactiveTickMarkColor:Colors.amber,
               thumpRadius: 15,
               tickMarkRadius: 5,
               trackHeight: 19,

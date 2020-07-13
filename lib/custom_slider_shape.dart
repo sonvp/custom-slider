@@ -144,7 +144,7 @@ class CustomTrackShape extends RoundedRectSliderTrackShape {
     );
 
     double leftTmp = sliderTheme.trackHeight / 2 > tickMarkRadius ? (sliderTheme
-        .trackHeight / 2) - 1 : tickMarkRadius;
+        .trackHeight / 2)  : tickMarkRadius;
     // The arc rects create a semi-circle with radius equal to track height.
     final Rect leftTrackArcRect = Rect.fromLTWH(trackRect.left-leftTmp, trackRect.top, trackRect.height, trackRect.height);
     if (!leftTrackArcRect.isEmpty)
